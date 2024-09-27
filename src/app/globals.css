@@ -5,6 +5,8 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
+  --joy-shadowChannel: rgb(9 107 222);
+  --codeit_purple: #6500c3;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -20,6 +22,13 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
+@layer components {
+  .css-shadow {
+    box-shadow: 0 0 #000, 0.3px 0.8px 1.1px #096bde1f,
+      1.1px 2.8px 3.9px -0.4px #096bde2b, 2.4px 6.1px 8.6px -0.8px #096bde3b,
+      5.3px 13.3px 18.8px -1.2px #096bde4a;
+  }
+}
 @layer utilities {
   .text-balance {
     text-wrap: balance;
